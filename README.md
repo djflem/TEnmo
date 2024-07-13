@@ -2,10 +2,10 @@ Module 2 Capstone - TEnmo
 Congratulations—you've landed a job with TEnmo, whose product is an online payment service for transferring "TE bucks" between friends. However, they don't have a product yet. You've been tasked with writing a RESTful API server and command-line application.
 
 Use cases
-[COMPLETE] As a user of the system, I need to be able to register myself with a username and password.
+As a user of the system, I need to be able to register myself with a username and password.
 A new registered user starts with an initial balance of 1,000 TE Bucks.
 The ability to register has been provided in your starter code.
-[COMPLETE] As a user of the system, I need to be able to log in using my registered username and password.
+As a user of the system, I need to be able to log in using my registered username and password.
 Logging in returns an Authentication Token. I need to include this token with all my subsequent interactions with the system outside of registering and logging in.
 The ability to log in has been provided in your starter code.
 As an authenticated user of the system, I need to be able to see my Account Balance.
@@ -39,6 +39,7 @@ Sample screens
 Use case 3: Current balance
 Your current account balance is: $9999.99
 Use case 4: Send TE Bucks
+
 -------------------------------------------
 Users
 ID          Name
