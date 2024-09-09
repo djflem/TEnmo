@@ -34,11 +34,9 @@ public class JdbcAccountDao implements AccountDao {
         } catch (CannotGetJdbcConnectionException e) {
             throw new DaoException("Unable to connect to server or database", e);
         }
-
         if (allAccounts.isEmpty()) {
             throw new AccountExceptions.AccountListNotFoundException("No accounts found");
         }
-
         return allAccounts;
     }
 

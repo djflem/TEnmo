@@ -25,7 +25,6 @@ public class AccountController {
     @RequestMapping(path = "/all/account", method = RequestMethod.GET)
     @PreAuthorize("hasRole('USER')")
     public List<Account> list() {
-
         try {
             return accountDao.getAccounts();
         } catch (AccountExceptions.AccountListNotFoundException e) {
@@ -64,8 +63,4 @@ public class AccountController {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
         }
     }
-
 }
-
-
-

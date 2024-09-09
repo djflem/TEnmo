@@ -166,7 +166,6 @@ public class App {
             System.out.println("Error: Amount must be greater than zero.");
             return;
         }
-
         // POST into Transfer table, need to get account object by user ID
         // transfer_status_id & transfer_type_id = 1 for 'Pending' and 'Request'
         transferService.postTransfer(1, accountFromId, amount, currentUser, accountService.getAccountByUserId(currentUser));
